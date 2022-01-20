@@ -17,6 +17,10 @@ VALUES
 	(9, 'Abstract art', 'A very weird clipart', '2015-05-01 12:23:11', 'https://clipartart.com/images/worst-clipart-ever-1.jpg', 'Private', 2),
 	(10, 'Knitting', 'Very relaxing', '2019-01-12 21:30:00', 'https://cdn.shopify.com/s/files/1/0078/5065/5857/t/8/assets/62638885ceb5--CocoKnitsBook_Appendix_Photo5_2692.jpg?1338', 'Private', 3);
 
+INSERT INTO BadWords (word)
+VALUES
+	('caca'), ('culo'), ('pedo'), ('pis');
+
 INSERT INTO Tags
 VALUES
 	(1, 'photography'),
@@ -71,7 +75,3 @@ VALUES
 INSERT INTO UsersFollows (followerId, followedId)
 VALUES
 	(2, 1), (3, 1), (1, 2), (1, 3);
-
-INSERT INTO BadWords (word)
-VALUES
-	('caca'), ('culo'), ('pedo'), ('pis');
