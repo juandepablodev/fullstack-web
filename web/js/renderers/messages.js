@@ -12,7 +12,7 @@ const messageRenderer = {
 
     showMessageAsAlert: function (message, bootClass, err) {
         let html = `<div class="alert alert-${bootClass} alert-dismissible col-md-12 fade show">
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         ${message}
                     </div>`;
         let errorsDiv = getErrorsDiv();
@@ -32,15 +32,15 @@ const messageRenderer = {
         }
     },
 
-    showErrorAsAlert: function (message, err = null) {
+    showErrorMessage: function (message, err = null) {
         this.showMessageAsAlert(message, "danger", err);
     },
 
-    showWarningAsAlert: function (message, err = null) {
+    showWarningMessage: function (message, err = null) {
         this.showMessageAsAlert(message, "warning", err);
     },
 
-    showSuccessAsAlert: function (message, err = null) {
+    showSuccessMessage: function (message, err = null) {
         this.showMessageAsAlert(message, "success", err);
     },
 }
