@@ -2,26 +2,99 @@
 <html lang="es">
 
     <head>
-        <title>Página de prueba</title> <!-- Este es el nombre de la página -->
-        <link rel="icon" href="/images/favicon.ico"> <!-- ESTO ES PARA PONER EL ICONO DE LA PÁGINA-->
+        <title>Gallery</title> 
+        <link rel="icon" href="/images/favicon.ico"> 
+        <script src="/js/utils/include.js"></script>
+        <link rel="stylesheet" href="/css/style.css">
     </head>
 
-    <body>
+    <body class="dark">
+        <div id="page-header"></div>
         <header>
             <h1>
-                Hola mundo.
+                Gallery.
             </h1>
         </header>
 
         <nav>
-            <a href="register.html"> Registro</a>
+            <a href="register.html"> Register</a>
         </nav>
 
         <section>
             <img src="/images/avatar.png"
             title="Avatar"
-            alt="Avatar del usuario">
+            alt="User avatar">
         </section>
+
+        <h2>Recent pictures</h2>
+            <a href="upload_picture.html">Upload a new picture</a>
+
+        <section class="gallery-container">
+            <div class="photo-block">
+                <div class="photo-header-block">
+                <h2 class="photo-title">Madrid</h2>
+                    <h3 class="photo-score">Score: 5.00</h3>
+                </div>
+
+                <div class="photo-image-block">
+                    <img class="photo-image" src="https://a.cdn-hotels.com/gdcs/production184/d314/ecd03240-9bea-11e8-b980-0242ac110006.jpg">
+                </div>
+
+                <div class="photo-metadata-block">
+                    <p class="photo-description">Madrid</p>
+                </div>
+
+                <div class="photo-edit-block">
+                    <button>Edit this photo</button>
+                    <button>Delete this photo</button>
+                </div>
+
+            </div>
+            <div class="photo-block">
+                <div class="photo-header-block">
+                <h2 class="photo-title">London</h2>
+                    <h3 class="photo-score">Score: 4.52</h3>
+                </div>
+
+                <div class="photo-image-block">
+                    <img class="photo-image" src="https://cdn.generationvoyage.fr/2023/03/activites-touristiques-londres-1536x1024.jpg">
+                </div>
+
+                <div class="photo-metadata-block">
+                    <p class="photo-description">London</p>
+                </div>
+
+                <div class="photo-edit-block">
+                    <button>Edit this photo</button>
+                    <button>Delete this photo</button>
+                </div>
+
+            </div>
+            <div class="photo-block">
+                <div class="photo-header-block">
+                <h2 class="photo-title">Paris</h2>
+                    <h3 class="photo-score">Score: 4.30</h3>
+                </div>
+
+                <div class="photo-image-block">
+                    <img class="photo-image" src="https://static01.nyt.com/images/2023/07/01/travel/22hours-paris-tjzf/22hours-paris-tjzf-videoSixteenByNine3000.jpg">
+                </div>
+
+                <div class="photo-metadata-block">
+                    <p class="photo-description">Paris</p>
+                </div>
+
+                <div class="photo-edit-block">
+                    <button>Edit this photo</button>
+                    <button>Delete this photo</button>
+                </div>
+
+            </div>
+            
+        </section>
+        <script>
+            include("header.html", "#page-header");
+        </script>
     </body>
 
 </html>
