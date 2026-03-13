@@ -81,7 +81,9 @@ div.title-block {
   font-family: monospace;
 }
 
-div.navigation > a {
+/*Nav*/
+
+nav.navigation > a {
     color: white;
     font-size: 120%;
     background-color: #555555;
@@ -89,4 +91,13 @@ div.navigation > a {
     text-decoration: none;
     display: inline-block;
     min-width: 150px;
+}
+
+/*back button*/
+
+#back-btn{
+    position: fixed;
+    left: 0;
+    margin-left: 3%;
+    margin-top: 1%;
 }

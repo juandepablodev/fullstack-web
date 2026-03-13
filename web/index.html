@@ -6,92 +6,97 @@
         <link rel="icon" href="/images/favicon.ico"> 
         <script src="/js/utils/include.js"></script>
         <link rel="stylesheet" href="/css/style.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <script src="/js/libs/bootstrap.min.js"></script>
+
     </head>
 
     <body class="dark">
-        <div id="page-header"></div>
-        <header>
-            <h1>
-                Gallery.
-            </h1>
-        </header>
+        <div class="container-fluid">
+            <div id="page-header"></div>
+            <header>
+                <h1>
+                    Gallery.
+                </h1>
+            </header>
 
-        <nav>
-            <a href="register.html"> Register</a>
-        </nav>
+            <nav>
+                <a href="register.html"> Register</a>
+            </nav>
 
-        <section>
-            <img src="/images/avatar.png"
-            title="Avatar"
-            alt="User avatar">
-        </section>
+            <section>
+                <img src="/images/avatar.png"
+                title="Avatar"
+                alt="User avatar">
+            </section>
 
-        <h2>Recent pictures</h2>
-            <a href="upload_picture.html">Upload a new picture</a>
+            <!--<h2>Recent pictures</h2>
+            <a href="upload_picture.html">Upload a new picture</a>-->
 
-        <section class="gallery-container">
-            <div class="photo-block">
-                <div class="photo-header-block">
-                <h2 class="photo-title">Madrid</h2>
-                    <h3 class="photo-score">Score: 5.00</h3>
+            <div class="container">
+            <div class="row text-center">
+                <div class="col-md">
+                <h3>Recent pictures</h3>
                 </div>
-
-                <div class="photo-image-block">
-                    <img class="photo-image" src="https://a.cdn-hotels.com/gdcs/production184/d314/ecd03240-9bea-11e8-b980-0242ac110006.jpg">
-                </div>
-
-                <div class="photo-metadata-block">
-                    <p class="photo-description">Madrid</p>
-                </div>
-
-                <div class="photo-edit-block">
-                    <button>Edit this photo</button>
-                    <button>Delete this photo</button>
-                </div>
-
+                <hr>
             </div>
-            <div class="photo-block">
-                <div class="photo-header-block">
-                <h2 class="photo-title">London</h2>
-                    <h3 class="photo-score">Score: 4.52</h3>
-                </div>
-
-                <div class="photo-image-block">
-                    <img class="photo-image" src="https://cdn.generationvoyage.fr/2023/03/activites-touristiques-londres-1536x1024.jpg">
-                </div>
-
-                <div class="photo-metadata-block">
-                    <p class="photo-description">London</p>
-                </div>
-
-                <div class="photo-edit-block">
-                    <button>Edit this photo</button>
-                    <button>Delete this photo</button>
-                </div>
-
             </div>
-            <div class="photo-block">
-                <div class="photo-header-block">
-                <h2 class="photo-title">Paris</h2>
-                    <h3 class="photo-score">Score: 4.30</h3>
-                </div>
 
-                <div class="photo-image-block">
-                    <img class="photo-image" src="https://static01.nyt.com/images/2023/07/01/travel/22hours-paris-tjzf/22hours-paris-tjzf-videoSixteenByNine3000.jpg">
-                </div>
 
-                <div class="photo-metadata-block">
-                    <p class="photo-description">Paris</p>
-                </div>
+            <section class="container">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="card bg-dark text-light">
+                            <img src="https://a.cdn-hotels.com/gdcs/production184/d314/ecd03240-9bea-11e8-b980-0242ac110006.jpg" class="card-img-top">
 
-                <div class="photo-edit-block">
-                    <button>Edit this photo</button>
-                    <button>Delete this photo</button>
-                </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Madrid</h5>
+                                <p class="card-text">Spain's capital</p>
+                                <p class="text-end">@user1</p>
+                            </div>
+                        </div>
 
-            </div>
-            
-        </section>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-dark text-light">
+                            <img src="https://cdn.generationvoyage.fr/2023/03/activites-touristiques-londres-1536x1024.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Londres</h5>
+                                <p class="card-text">France's capital</p>
+                                <p class="text-end">@user2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-dark text-light">
+                            <img src="https://static01.nyt.com/images/2023/07/01/travel/22hours-paris-tjzf/22hours-paris-tjzf-videoSixteenByNine3000.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Paris</h5>
+                                <p class="card-text">UK's capital</p>
+                                <p class="text-end">@user3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-dark text-light">
+                            <img src="https://static01.nyt.com/images/2023/07/01/travel/22hours-paris-tjzf/22hours-paris-tjzf-videoSixteenByNine3000.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Paris</h5>
+                                <p class="card-text">UK's capital</p>
+                                <p class="text-end">@user3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
         <script>
             include("header.html", "#page-header");
         </script>
