@@ -39,6 +39,17 @@ img.photo-image {
     height: auto;
 }
 
+div.card{
+    border-radius: 5%;
+    padding: 0.5em;
+    margin-bottom: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 /* Form */
 
 input, select {

@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/font-awesome.min.css">
         <script src="/js/libs/bootstrap.min.js"></script>
+        <script src="js/photo_detail.js" type="module"></script>
+        
 
     </head>
 
@@ -25,14 +27,8 @@
             </div>
             
 
-            <div class="col-md">
-                <h3>Samoyed</h3>
-                <h6>A very good boy</h6>
-                <p>Uploaded by <a href="user_profile.html">User 1</a> on 12/01/2021</p>
-
-                <hr>
-
-                <img src="https://i.ibb.co/tY1Jcnc/wlZCfCv.jpg" class="img-fluid">
+            <div class="col-md-9" id="photo-details-column">
+                <!-- Photo details will be rendered here -->
             </div>
         </div>
 
@@ -55,12 +51,7 @@
                 </div>
             </form>
         </div>
-        
-
-        
-
-
-
+    
         <script>
             include("header.html", "#page-header");
         </script>
