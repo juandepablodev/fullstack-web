@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8"
+        <meta charset="utf-8">
         
         <link rel="icon" href="/images/favicon.ico">
         <script src="/js/utils/include.js"></script>
@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="/css/font-awesome.min.css">
         <script src="/js/libs/bootstrap.min.js"></script>
         <script src="js/register.js" type="module"></script>
+        <script src="js/libs/axios.min.js"></script>
+        <script src="js/header.js" type="module"></script>
+
 
     </head>
 
@@ -57,14 +60,13 @@
                                     <option value="34">+34</option>
                                     <option value="1">+1</option>
                                     <option value="other">Other</option>
-                                </select>
-
+                                </select> <!-- LOS NAME TIENEN QUE COINCIDIR CON LOS NOMBRES DE LA BASE DE DATOS -->
                                 <input type="tel"
                                     class="form-control bg-dark text-light"
                                     id="telephone-input"
-                                    name="telephone"
+                                    name="telephone" 
                                     placeholder="Telephone number">
-                            </div>
+                            </div>  
                         </div>
                     </div>
 

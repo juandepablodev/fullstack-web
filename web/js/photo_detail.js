@@ -15,6 +15,15 @@ function main() {
 
     let photoDetails = photoRenderer.asDetails(photo);
     photoContainer.appendChild(photoDetails);
+
+    hideActionsColumn();
+}
+
+function hideActionsColumn() {
+    let actions_col = document.getElementById("actions-col");
+    if (!sessionManager.isLogged()) {
+        actions_col.style.display = "none";
+    }
 }
 
 document.addEventListener("DOMContentLoaded", main);

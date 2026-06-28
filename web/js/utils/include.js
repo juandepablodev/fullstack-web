@@ -2,7 +2,7 @@
 
 let include = (htmlFile, selector) => {
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', htmlFile, false); //Turns synchronous
+    xhr.open('GET', htmlFile, true); //Turns synchronous
     xhr.addEventListener('load', () => {
         if (xhr.readyState == 4 && xhr.status == "200") {
             document.querySelector(selector).innerHTML += xhr.responseText;
