@@ -115,3 +115,10 @@ nav.navigation > a {
     margin-left: 3%;
     margin-top: 1%;
 }
+
+
+img.photo-user-avatar {
+    max-width: 25px;
+    height: auto;
+    border-radius: 50%;
+}
