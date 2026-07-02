@@ -16,6 +16,18 @@ async function main() {
     }
 
     loadPhotoDetails();
+    
+    // Assign the handler function to the delete button
+    let deleteBtn = document.querySelector("#button-delete");
+    deleteBtn.onclick = handleDelete;
+
+    let editBtn = document.querySelector("#button-edit");
+    editBtn.onclick = handleEdit;
+}
+
+
+function handleEdit(event) {
+    window.location.href = "edit_photo.html?photoId=" + photoId;
 }
 
 async function loadPhotoDetails() {
@@ -27,6 +39,19 @@ async function loadPhotoDetails() {
     } catch (err) {
         messageRenderer.showErrorMessage("Error loading photo", err);
         
+    }
+}
+
+async function handleDelete(event) {
+    let answer = confirm("Do you really want to delete this photo?");
+
+    if (answer) {
+        try {
+            await photosAPI_auto.delete(photoId);
+            window.location = "/index.html";
+        } catch (err) {
+            messageRenderer.showErrorMessage(err.response.data.message);
+        }
     }
 }
 

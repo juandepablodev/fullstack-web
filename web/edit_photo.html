@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>Gallery</title> 
+        <link rel="icon" href="/images/favicon.ico"> 
+        <script src="/js/utils/include.js"></script>
+        <link rel="stylesheet" href="/css/style.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <script src="/js/libs/bootstrap.min.js"></script>
+        <script src="js/photo_detail.js" type="module"></script>
+        <script src="js/header.js" type="module"></script>
+
+
+    </head>
+
+    <body class="dark">
+        <div id="page-header"></div>
+
+        <div class="row text-center"> 
+
+        <form id="form-photo-upload">
+            <div class="form-group">
+                <label for="input-url">URL:</label>
+                <input required type="text" class="form-control" id="input-url" name="url"
+                    placeholder="Photo URL">
+            </div>
+
+            <div class="form-group">
+                <label for="input-title">Title:</label>
+                <input required type="text" class="form-control" id="input-title" name="title"
+                    placeholder="Title">
+            </div>
+
+            <div class="form-group">
+                <label for="input-description">Description:</label>
+                <textarea class="form-control" id="input-description" name="description"
+                    placeholder="Describe your image..." rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="input-visibility">Visibility:</label>
+                <select required class="form-control" id="input-visibility" name="visibility">
+                    <option value="Public">Public</option>
+                    <option value="Private">Private</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <div class="col-md text-center">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </form>
+        </div>   
+        <script>
+            include("header.html", "#page-header");
+        </script>
+    </body>
+
+</html>
