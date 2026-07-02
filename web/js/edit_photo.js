@@ -1,6 +1,6 @@
 "use strict";
 
-import { photosAPI } from "/js/api/photos.js";
+import { photosAPI_auto } from "/js/api/_photos.js";
 import { messageRenderer } from "/js/renderers/messages.js";
 
 let urlParams = new URLSearchParams(window.location.search);

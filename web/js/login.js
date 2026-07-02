@@ -5,14 +5,14 @@ import { sessionManager } from "./utils/session.js";
 import { authAPI_auto } from "./api/_auth.js";
 
 function main() {
-    let form_login = document. getElementById("form-login")
+    let form_login = document.getElementById("form-login")
     form_login.onsubmit = HandleSubmitLogin;
 }
 
 async function HandleSubmitLogin(event) {
     event.preventDefault();
     let form = event.target;
-    let formData = new FormDataEvent(form);
+    let formData = new FormData(form);
     try {
         let loginData = await authAPI_auto.login(formData);
         let sessionToken = loginData.sessionToken;
@@ -25,3 +25,5 @@ async function HandleSubmitLogin(event) {
         messageRenderer.showErrorMessage("Error registering a new user", err);
     }
 }
+
+document.addEventListener("DOMContentLoaded", main);
