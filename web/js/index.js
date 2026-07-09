@@ -13,12 +13,12 @@ async function loadAllPhotos() {
   let galleryContainer = document.querySelector("div.container");
   
   try {
-      let photos = await photoswithusersAPI_auto.getAll();
-      
-      let cardGallery = galleryRenderer.asCardGallery(photos);
-      galleryContainer.appendChild(cardGallery);
+    let photos = await photoswithusersAPI_auto.getAll();
+    
+    let cardGallery = galleryRenderer.asCardGallery(photos);
+    galleryContainer.appendChild(cardGallery);
   } catch (err) {
-      messageRenderer.showErrorMessage("Error while loading photos", err);
+    messageRenderer.showErrorMessage("Error while loading photos", err);
   }
 }
 
