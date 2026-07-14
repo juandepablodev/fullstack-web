@@ -11,11 +11,10 @@ VALUES
 	(3, 'Coding in C#', 'A piece of very intricate code', '2020-04-23 18:20:43', 'https://pbs.twimg.com/media/Ea4HJNaXsAEbzzF?format=jpg&name=900x900', 'Public', 3),
 	(4, 'The future society', 'This is what society would look like if PHP didn\'t exist', '2016-05-10 18:21:43', 'https://pbs.twimg.com/media/Eeeb3R0VAAAiVCp.jpg', 'Public', 1),
 	(5, 'Comfy cat', 'A drawing of a cat about to sleep', '2016-04-23 18:21:43', 'https://pbs.twimg.com/media/EZ4Z2QDUYAANA-Z?format=png', 'Public', 2),
-	(6, 'Seville', 'The beautiful city of Seville, Spain', '2016-04-23 18:20:43', 'https://urbansevilla.es/wp-content/uploads/2019/03/urban-sevilla-foto-ciudad.jpg', 'Public', 3),
-	(7, 'Mont Saint-Michel', 'An island located in Normandy, France', '2019-04-23 18:20:43', 'https://www.timetravelturtle.com/wp-content/uploads/2019/11/Mont-St-Michel-2019-356_new.jpg', 'Public', 2),
-	(8, 'Night operations', 'A plane flying over Toronto at night', '2020-02-28 13:33:37', 'https://www.airlive.net/wp-content/uploads/2016/09/maxresdefault-23.jpg', 'Private', 1),
-	(9, 'Abstract art', 'A very weird clipart', '2015-05-01 12:23:11', 'https://clipartart.com/images/worst-clipart-ever-1.jpg', 'Private', 2),
-	(10, 'Knitting', 'Very relaxing', '2019-01-12 21:30:00', 'https://cdn.shopify.com/s/files/1/0078/5065/5857/t/8/assets/62638885ceb5--CocoKnitsBook_Appendix_Photo5_2692.jpg?1338', 'Private', 3);
+	(6, 'Mont Saint-Michel', 'An island located in Normandy, France', '2019-04-23 18:20:43', 'https://www.timetravelturtle.com/wp-content/uploads/2019/11/Mont-St-Michel-2019-356_new.jpg', 'Public', 2),
+	(7, 'Night operations', 'A plane flying over Toronto at night', '2020-02-28 13:33:37', 'https://www.airlive.net/wp-content/uploads/2016/09/maxresdefault-23.jpg', 'Private', 1),
+	(8, 'Abstract art', 'A very weird clipart', '2015-05-01 12:23:11', 'https://clipartart.com/images/worst-clipart-ever-1.jpg', 'Private', 2),
+	(9, 'Knitting', 'Very relaxing', '2019-01-12 21:30:00', 'https://cdn.shopify.com/s/files/1/0078/5065/5857/t/8/assets/62638885ceb5--CocoKnitsBook_Appendix_Photo5_2692.jpg?1338', 'Private', 3);
 
 INSERT INTO BadWords (word)
 VALUES
